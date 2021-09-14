@@ -33,9 +33,9 @@
     }
     
     .logo {
-        width: 200px;
-        height: 200px;
-        transform: translate(-50px, -50px);
+        width: 100px;
+        height: auto;
+        transform: translate(0px, 15px);
         max-width: none;
     }
     
@@ -47,20 +47,27 @@
         list-style: none;
         max-width: 80%;
         text-transform: uppercase;
+        /* overflow: hidden; */
     }
     
     .navbar-item {
-        line-height: 100%;
         border-radius: 5px;
         padding: 16px 8px;
-        letter-spacing: 0.01rem;
-        word-spacing: 20%;
-        color: #000;
-        font-weight: 600;
         position: relative;
     }
     
-    .navbar-item:hover {
+    .navbar-item a {
+        letter-spacing: 0.01rem;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .navbar-item:hover>.sub__nav {
+        display: block;
+    }
+    
+    .navbar-item:hover,
+    .active {
         background-color: rgb(101, 209, 109);
         color: #fff !important;
     }
@@ -68,7 +75,25 @@
     .sub__nav {
         display: none;
         position: absolute;
-        top: 10rem;
+        top: 46px;
+        left: 0px;
+        border-radius: 5px;
+        float: left;
+        z-index: 100;
+        background-color: rgb(101, 209, 109);
+        width: max-content;
+        box-shadow: 0 0 8px rgba(49, 164, 58, 0.3);
+    }
+    
+    .sub-item,
+    .sub-item a {
+        display: block;
+        color: #fff;
+        padding: 8px 8px;
+    }
+    
+    .sub-item:hover {
+        opacity: 0.5;
     }
     
     .ti-angle-down {
@@ -99,17 +124,18 @@
     .slide__wrap {
         display: flex;
         position: relative;
-        max-height: 650px;
+        height: 100%;
     }
     
     .mySlides {
         display: none;
-        width: 100%;
+        max-width: 1024px;
+        max-height: 100%;
     }
     
     .mySlides__img {
         display: block;
-        min-width: 1024px;
+        object-position: center;
         align-items: center;
     }
     
@@ -250,6 +276,7 @@
         width: 100%;
         height: 80%;
         flex-shrink: 0;
+        flex-grow: 1;
         object-fit: cover;
     }
     
@@ -284,6 +311,8 @@
     
     .aboutUs__wrap {
         display: flex;
+        flex-shrink: 0;
+        flex-grow: 1;
         justify-content: space-between;
         padding: 24px 16px;
         font-size: 1.5rem;
@@ -307,7 +336,14 @@
     
     .map-wrap {
         width: 800px;
-        height: 460px;
+        height: 600px;
+        padding: 60px 8px;
         border: 0;
         object-fit: cover;
+    }
+    
+    .maps {
+        width: 100%;
+        height: auto;
+        align-items: left;
     }
