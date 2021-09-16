@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Thiên Mộc Website</title>
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/fonts/themify-icons/themify-icons.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="./public/javascript/main.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="header__logo">
+                <a href="#">
+                    <img src="./static/img/Logo_1.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <ul class="navbar__wrap">
+                <li class="navbar-item .active"><a href="">Trang Chủ</a></li>
+                <li class="navbar-item">
+                    <a href="">Giới Thiệu</a>
+                    <i class="ti-angle-down"></i>
+                    <ul class="sub__nav">
+                        <li class="sub-item"><a href="#">Giới thiệu về chúng tôi</a></li>
+                        <li class="sub-item"><a href="#">Năng lực thi công</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="">Dịch Vụ</a>
+                    <i class="ti-angle-down"></i>
+                    <ul class="sub__nav">
+                        <li class="sub-item"><a href="#">Tư vấn- Thiết kế </a></li>
+                        <li class="sub-item"><a href="#">Thi công dự án môi trường</a></li>
+                        <li class="sub-item"><a href="#">Hồ sơ Đánh giá tác động môi trường</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="">Dự Án</a>
+                    <i class="ti-angle-down"></i>
+                    <ul class="sub__nav">
+                        <li class="sub-item"><a href="#">Dự án 1 </a></li>
+                        <li class="sub-item"><a href="#">Dự án 2</a></li>
+                        <li class="sub-item"><a href="#">Dự án 3</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="">Sản Phẩm </a>
+                    <i class="ti-angle-down"></i>
+                    <ul class="sub__nav">
+                        <li class="sub-item"><a href="#">Các thiết bị bơm </a></li>
+                        <li class="sub-item"><a href="#">Các thiết bị lọc</a></li>
+                        <li class="sub-item"><a href="#">Các loại vật tư khác</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item"><a href="">Tuyển Dụng</a></li>
+                <li class="navbar-item"><a href="#footer">Liên Hệ</a></li>
+                <li class="navbar-item search-btn">
+                    <a href=""><i class="ti-search"></i></a>
+                </li>
+            </ul>
+        </header>
+        <!-- Slider Start  -->
+        <div class="slider__container">
+            <!-- Nội dung chính -->
+            <div class="slide__wrap">
+                <div class="mySlides fade">
+                    <img src="" alt="" class="slide--bg">
+                </div>
+            </div>
+            <div class="slider__represent">
+                <h3 class="slider__represent--title">
+                    Trạm xử lý nước thải Thủy Sản
+                </h3>
+                <p class="slider__represent--description">
+                    Công suất: 500m<sup>2</sup>
+                    </br>
+                    Địa điểm : Lai Vung - Đồng Tháp
+                </p>
+            </div>
+            <!-- Hết nội dung chính -->
+            <!-- Nút 2 bên -->
+            <button class="slider-button previous" onclick="plusSlides(-1)">
+                <i class="ti-angle-left"></i>
+            </button>
+            <button class="slider-button next" onclick="plusSlides(1)">
+                <i class="ti-angle-right"></i>
+            </button>
+            <!-- Các chấm phía dưới -->
+            <ul class="slider-dot-list">
+                <li class="slider-dot" onclick="currentSlide(0)"></li>
+                <li class="slider-dot" onclick="currentSlide(1)"></li>
+                <li class="slider-dot" onclick="currentSlide(2)"></li>
+                <li class="slider-dot" onclick="currentSlide(3)"></li>
+                <li class="slider-dot" onclick="currentSlide(4)"></li>
+                <li class="slider-dot" onclick="currentSlide(5)"></li>
+            </ul>
+        </div>
+        <!-- Slider end -->
+        <div class="service__section">
+            <h3 class="service__title">
+                Các dự án đã thực hiện bởi Đại Thiên Mộc
+            </h3>
+            <div class="service__wrap">
+                <div class="service__project">
+                    <img src="./static/img/Project/indochine foamteach 1.jpg" alt="dự án 1" class="project--img">
+                    <div class="project--name">
+                        <h4><a href="">hệ thống xử lý hơi dung môi Cty Indochine FoamTech</a></h4>
+                    </div>
+                    <p class="project--desc">Công suất: 90.000m<sup>3</sup>/h</p>
+                    <span>Địa điểm: khu cn mỹ phước 3, bình dương</span>
+                </div>
+                <div class="service__project">
+                    <img src="./static/img/Project/return gold 2.jpg" alt="dự án 1" class="project--img">
+                    <div class="project--name">
+                        <h4><a href="">hệ thống xử lý nước thải công nghiệp Cty Return Gold</a></h4>
+                    </div>
+                    <p class="project--desc">Công suất: 100m<sup>3</sup>/ngày</p>
+                    <span>Địa điểm: khánh bình, tân uyên, bình dương</span>
+                </div>
+                <div class="service__project">
+                    <img src="./static/img/Project/lò mổ 2.jpg" alt="dự án 1" class="project--img">
+                    <div class="project--name">
+                        <h4><a href="">hệ thống xử lý nước thải giết mổ gia súc</a></h4>
+                    </div>
+                    <p class="project--desc">Công suất: 60m<sup>3</sup>/ngày</p>
+                    <span>Địa điểm: An thạnh, thuận an, bình dương</span>
+                </div>
+                <div class="service__project">
+                    <img src="./static/img/Project/millennium 2.jpg" alt="dự án 1" class="project--img">
+                    <div class="project--name">
+                        <h4><a href="">hệ thống xử lý hơi dung môi Millenium</a></h4>
+                    </div>
+                    <p class="project--desc">Công suất: 45.000m<sup>3</sup>/h</p>
+                    <span>Địa điểm: kcn bàu bàng, huyện bàu bàng, bình dương</span>
+                </div>
+                <div class="service__project">
+                    <img src="./static/img/Project/khu dân cư vĩnh phú 1.jpg" alt="dự án 1" class="project--img">
+                    <div class="project--name">
+                        <h4><a href="">Cải tạo hệ thống xử lý nước thải sinh hoạt KDC Vĩnh Phú 2</a></h4>
+                    </div>
+                    <p class="project--desc">Công suất: 1000m<sup>3</sup>/ngày</p>
+                    <span>Địa điểm: Vĩnh phú, Dĩ An, Bình Dương</span>
+                </div>
+                <div class="service__project">
+                    <img src="./static/img/Project/hung thinh 2.jpg" alt="dự án 1" class="project--img">
+                    <div class="project--name">
+                        <h4><a href="">Hệ thống xử lý nước thải công nghiệp Cty TNHH Nhà Hưng Thịnh</a></h4>
+                    </div>
+                    <p class="project--desc">Công suất: 120m<sup>3</sup>/ngày</p>
+                    <span>Địa điểm: Dầu tiếng, bình dương</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="partner__brand">
+            <div class="brand--block">
+                <img src="./static/img/Partner/Evergush.jpg" alt="Evergush">
+            </div>
+            <div class="brand--block">
+                <img src="./static/img/Partner/Pedrollo.png" alt="Pedrollo">
+            </div>
+            <div class="brand--block">
+                <img src="./static/img/Partner/Longtech.jpg" alt="LongTech">
+            </div>
+            <div class="brand--block">
+                <img src="./static/img/Partner/Bluewhite.png" alt="Blue-White">
+            </div>
+            <div class="brand--block">
+                <img src="./static/img/Partner/Greatech.png" alt="Greatech">
+            </div>
+        </div>
+        <div class="aboutUs__wrap">
+            <div class="aboutUs">
+                <h4>Thông tin về Chúng tôi</h4>
+                </br>
+                <h3><strong>Công ty TNHH Thương Mại Dịch Vụ Đại Thiên Mộc</strong></h3>
+                <p>
+                    <br> Trụ sở: Thửa đất số 421, tờ bản đồ số 3, khu phố 6, phường Phú Lợi, TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                    <br>Văn phòng: Lô e4, Đường số 8, Khu Dân Cư Hiệp thành 3, phường Hiệp thành, TP.Thủ Dầu Một, Tỉnh Bình Dương.
+                    <br>Hotline: 038 3382330
+                    <br>Email: moitruong.daithienmoc@gmail.com
+                    <br>Website: www.daithienmoc.com.vn
+                    <br>Mã số thuế: 3702417632
+                    <br>Số tài khoản: 015 031 990 001 Ngân Hàng TMCP Đông Á (DongaBank), CN Bình Dương
+                </p>
+            </div>
+            <div class="contact">
+                <h4>Liên hệ chúng tôi</h4>
+                <div class="map-wrap">
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d488.31224150896384!2d106.66947261848524!3d10.999171426058544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1631326097575!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
